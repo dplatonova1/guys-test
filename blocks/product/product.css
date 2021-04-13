@@ -1,0 +1,156 @@
+/* product */
+
+.product{
+    margin-bottom: 115px;
+}
+
+.product__title{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.product__wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.product__image{
+    width: 503px;
+    margin-right: 139px;
+}
+
+.product__info{
+    width: 433px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 2px;
+    padding: 20px;
+}
+
+.product__info-parameter{
+    font-weight: 500;
+    padding: 5px 0;
+}
+
+.product__type{
+    font-size: 1rem;
+    line-height: 1.375;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.product__type-options{
+    width: 297px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    
+}
+
+.product__type-option{
+    width: 138px;
+    height: 50px;
+}
+
+
+.product__info-title{
+    width: 257px;
+    color: #99A6B9;
+    padding: 5px 0;
+}
+
+.product__add{
+    width: 157px;
+    height: 50px;
+    font-size: 1rem;
+    line-height: 1.375;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: #E83850;
+    color:#ffffff;
+    border: none;
+    border-radius: 2px;
+    margin-top: 40px;}
+
+.product__add:hover{
+    background: #B70F25;
+}
+
+a:hover, button:hover{
+    cursor: url('./images/cursor.svg'), auto;
+}
+
+.product__profile{
+    margin-bottom: 40px;
+}
+
+.product__price{
+    position: relative;
+    width: 200px;   
+}
+
+.product__price_new{
+    color: #DE2F46;
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.product__price_old{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.275rem;
+    text-decoration-line: line-through;
+    color: #99A6B9;
+    margin: 0;
+}
+
+.product__full-title{
+    width: 176px;
+    font-size: 1.125rem;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 5px;
+    border-bottom: 2px #002051 solid;
+}
+
+.product__info-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 848px;
+}
+
+.product__usage-title{
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.product__usage-link{
+    text-decoration: underline;
+    color: #002051;
+    padding-right: 10px;
+}
+
+.product__usage-link:hover{
+    color: #0AAEDD;
+}
+
+.product__usage-table{
+    display: grid;
+    grid-template-columns: 211px auto;
+    grid-template-rows: auto auto;
+    grid-column-gap: 44px;
+    grid-row-gap: 10px;
+}
+
+.product__text{
+    margin:0; 
+}

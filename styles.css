@@ -1,10 +1,20 @@
+@import url('./blocks/page.css');
+
 @font-face {
-  src: url(./fonts/Montserrat-Light.ttf) format("truetype"),
-    url(./fonts/Montserrat-Light.woff2) format("woff2"),
-    url(./fonts/Montserrat-Light.woff) format("woff");
+  src: url(./fonts/Montserrat-Medium.ttf) format("truetype"),
+    url(./fonts/Montserrat-Medium.woff2) format("woff2"),
+    url(./fonts/Montserrat-Medium.woff) format("woff");
   font-family: Montserrat;
-  font-weight: normal;
+  font-weight: 500;
 }
+
+@font-face {
+    src: url(./fonts/Montserrat-Regular.ttf) format("truetype"),
+      url(./fonts/Montserrat-Regular.woff2) format("woff2"),
+      url(./fonts/Montserrat-Regular.woff) format("woff");
+    font-family: Montserrat;
+    font-weight: normal;
+  }
 
 @font-face {
   src: url(./fonts/Montserrat-Bold.ttf) format("truetype"),
@@ -35,5 +45,38 @@ html {
   flex-direction: column;
   justify-content: center;
   color: #002051;
-  overflow: hidden;
 }
+
+.content{
+    margin: auto 94px;
+    position: relative;
+}
+
+.button_dark{
+    background-color: #002051;
+    border-radius: 2px;
+    border: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+.button_dark:hover{
+    background-color: #ffffff;
+    border: 1px solid #002051;
+    border-radius: 2px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #002051;
+}
+
+.stripes{
+    width: 16px;
+}
+
+.logo{
+    width: 135px;
+}
+

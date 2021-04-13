@@ -1,0 +1,9 @@
+.cart{
+    display: none;
+    width: 595px;
+    height: 400px;
+    background-color: teal;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
