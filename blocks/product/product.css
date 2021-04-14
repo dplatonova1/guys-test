@@ -47,8 +47,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 40px;
-    
+    margin-bottom: 40px;    
 }
 
 .product__type-option{
@@ -81,7 +80,7 @@
 }
 
 a:hover, button:hover{
-    cursor: url('./images/cursor.svg'), auto;
+    cursor: url('../../images/cursor.svg'), auto;
 }
 
 .product__profile{
@@ -131,6 +130,7 @@ a:hover, button:hover{
 .product__usage-title{
     font-size: 1.125rem;
     font-weight: 500;
+    font-family: 'Halvar Breitschrift', sans-serif;
 }
 
 .product__usage-link{

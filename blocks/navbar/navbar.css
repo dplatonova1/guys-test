@@ -1,23 +1,8 @@
+@import url('./__item/navbar__item.css');
+@import url('./__item-link/navbar__item-link.css');
 
 .navbar{
     list-style: none;
     padding: 0;
     margin-bottom: 40px;
-}
-
-.navbar__item{
-    display: inline;
-    text-decoration: none;
-    font-size: 1rem;
-    line-height: 1.375;
-    color: #99A6B9;
-}
-
-.navbar__item + li:before{
-    content: "/\00a0"
-}
-
-.navbar__item-link{
-    text-decoration: none;
-    color: #002051;
 }

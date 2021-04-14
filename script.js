@@ -1,14 +1,22 @@
 const cart = document.querySelector('.cart');
-const productInfo = document.querySelector('.product__info');
+const page = document.querySelector('.page');
 
-function timer(){
-    
+function closeCart(){
+    cart.setAttribute('style', 'opacity: 0')
 }
 
+function openCart(){
+    cart.setAttribute('style', 'opacity: 1')
+}
 
-
-productInfo.addEventListener('click', (ev)=>{
+document.addEventListener('click', (ev)=>{
     if(ev.target.closest('.product__add')){
-        cart.setAttribute('style', 'display: block')
+        openCart()
+        page.classList.add('page__overlay')
+        setTimeout(()=>{closeCart()}, 3000)
+    } 
+    else if(ev.target.closest('.page__overlay')){
+        closeCart()
     }
 })
+

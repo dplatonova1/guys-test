@@ -1,0 +1,11 @@
+.navbar__item{
+    display: inline;
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 1.375;
+    color: #99A6B9;
+}
+
+.navbar__item + li:before{
+    content: "/\00a0"
+}

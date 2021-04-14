@@ -1,0 +1,10 @@
+
+.consult__form {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 28px;
+    width: 820px;
+    margin-top: 32px;
+    color: #ffffff;
+  }

@@ -1,0 +1,9 @@
+.menu__links{
+    width: 324px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}

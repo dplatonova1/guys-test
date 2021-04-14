@@ -1,0 +1,8 @@
+.search__catalog-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;    
+    width: 127px;
+    padding: 10px 15px 10px 15px;    
+}

@@ -1,0 +1,9 @@
+.search__bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    border: 1px solid #002051;
+    box-sizing: border-box;
+    border-radius: 4px;
+}

@@ -1,0 +1,12 @@
+.cart__item-counter{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    width: 104px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #002051;
+    border-radius: 0px 2px 2px 0px;
+    padding: 15px;
+}

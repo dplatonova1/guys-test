@@ -1,9 +1,50 @@
+@import url('./__item-counter/cart__item-counter.css');
+@import url('./__button/cart__button.css');
+@import url('./__item-image/cart__item-image.css');
+@import url('./__item-quantity/cart__item-quantity.css');
+@import url('./__item-stock/cart__item-stock.css');
+@import url('./__item-title/cart__item-title.css');
+@import url('./__item/cart__item.css');
+@import url('./__items/cart__items.css');
+@import url('./__manipulate/cart__manipulate.css');
+@import url('./__price-old/cart__price_old.css');
+@import url('./__title/cart__title.css');
+@import url('./__total/cart__total.css');
+
 .cart{
-    display: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-row-gap: 20px;
     width: 595px;
     height: 400px;
-    background-color: teal;
-    position: absolute;
+    background-color: #ffffff;
+    position: fixed;
+    border-radius: 2px;
     bottom: 30px;
     right: 30px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    opacity: 0;
+    transition: 0.2s ease all;
+    z-index: 5;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

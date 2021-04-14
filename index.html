@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css" type="text/css">
+    <link rel="stylesheet" href="./blocks/page.css" type="text/css">
     <title>Тестовое задание для guys agency</title>
 </head>
 
@@ -14,16 +14,16 @@
             <div class="header__wrapper">
                 <nav class="menu">
                     <ul class="menu__links">
-                        <li class="menu__link">Доставка</li>
-                        <li class="menu__link">Оплата</li>
-                        <li class="menu__link">Возврат</li>
-                        <li class="menu__link">Магазин</li>
+                        <li class="menu__link"><a href="" class="navbar__item-link">Доставка</a></li>
+                        <li class="menu__link"><a href="" class="navbar__item-link">Оплата</a></li>
+                        <li class="menu__link"><a href="" class="navbar__item-link">Возврат</a></li>
+                        <li class="menu__link"><a href="" class="navbar__item-link">Магазин</a></li>
                     </ul>
                     <p class="menu__phone">+7 495 744-00-50</p>
                 </nav>
 
                 <section class="search">
-                    <img src="./images/logo.svg" alt="" class="logo">
+                    <img src="./images/logo.svg" alt="логотип организации" class="search__logo">
                     <button class="search__catalog-button button_dark"> <img src="./images/hamburger.svg" alt=""
                             class="stripes"> Каталог</button>
                     <div class="search__wrapper">
@@ -31,14 +31,13 @@
                             <input type="text" class="search__input"
                                 placeholder="Поиск по OEM, производителю, модели и категории">
                             <button type="submit" class="search__button">
-                                <img src="./images/search.svg" alt="" class="search__search-icon">
+                                <img src="./images/search.svg" alt="иконка поиска" class="search__search-icon">
                             </button>
                         </div>
                     </div>
-                    <img src="./images/user.svg" alt="" class="search__user-icon">
+                    <img src="./images/user.svg" alt="иконка пользователя" class="search__user-icon">
                     <div class="search__cart">
-                        <img src="./images/cart.svg" alt="" class="search__cart-icon">
-                        <img src="" alt="" class="count">
+                        <img src="./images/cart.svg" alt="иконка пользовательской корзины" class="search__cart-icon">
                     </div>
                 </section>
             </div>
@@ -61,7 +60,7 @@
                 </h1>
                 <p class="product__text">Артикул: 401107305S</p>
                 <div class="product__wrapper">
-                    <img src="./images/product.png" alt="" class="product__image">
+                    <img src="./images/product.png" alt="изображение гребного винта 3x7.3x5, Solas, 4011-073-05S" class="product__image">
                     <div class="product__info">
                         <h3 class="product__type">Модель: 3 лопасти</h2>
                             <div class="product__type-options">
@@ -166,47 +165,55 @@
             </section>
 
             <section class="cart">
-                <h2 class="cart__title">Корзина: <span class="product__price_new">2 420 &#x20bd;</span> </h2>
+                <h2 class="cart__title">Корзина: <span class="cart__total product__price_new">2 420 &#x20bd;</span> </h2>
                 <div class="cart__items">
                     <div class="cart__item">
-                        <img src="./images/product.png" alt="" class="cart__item-image">
-                        <h3 class="cart__item-title">Гребной винт 3x7.3x5, Solas, 4011-073-05S...
-                        </h3>
-                        <div class="product__price">
-                            <p class="product__price_new">3 940 &#x20bd;</p>
-                            <p class="product__price_old">1 970 &#x20bd;</p>
+                        <img src="./images/product.png" alt="изображение гребного винта" class="cart__item-image">
+                        <div class="cart__item-wrapper">
+                            <h3 class="cart__item-title">Гребной винт 3x7.3x5, Solas, 4011-073-05S...
+                            </h3>
+                            <div class="product__price">
+                                <p class="cart__item-title product__price_new">3 940 &#x20bd;</p>
+                                <p class="cart__price_old product__price_old">1 970 &#x20bd;</p>
+                            </div>
+                            <p class="cart__item-stock">В наличии</p>
                         </div>
-                        <p class="cart__item-stock">В наличии</p>
-                        <img src="./images/delete.svg" alt="" class="cart__item-delete">
+
+                        <div class="cart__manipulate">
+                        <button class="cart__item-manipulate"><img src="./images/delete.svg" alt="иконка удаления товара из корзины" class="cart__item-delete"></button>
                         <div class="cart__item-counter">
-                            <button class="cart__item-increase">
-                                +
+                            <button class="cart__item-manipulate">
+                                &#43;
                             </button>
                             <p class="cart__item-quantity">1</p>
-                            <button class="cart__item-decrease">
-                                -
+                            <button class="cart__item-manipulate">
+                                &#8722;
                             </button>
                         </div>
                     </div>
+                    </div>
                     <div class="cart__item">
-                        <img src="./images/filter.png" alt="" class="cart__item-image">
-                        <h3 class="cart__item-header">Фильтр топливный Fleetguard
+                        <img src="./images/filter.png" alt="изображение топливного фильтра" class="cart__item-image">
+                        <div class="cart__item-wrapper">
+                        <h3 class="cart__item-title">Фильтр топливный Fleetguard
                         </h3>
                         <div class="product__price">
-                            <p class="product__price_new">450 ₽</p>
-                            <!-- <p class="product__price_old">1 970 ₽</p> -->
+                            <p class="product__price_new cart__item-title">450 ₽</p>
                         </div>
                         <p class="cart__item-stock">В наличии</p>
-                        <img src="./images/delete.svg" alt="" class="cart__item-delete">
+                    </div>
+                    <div class="cart__manipulate">
+                        <button class="cart__item-manipulate"><img src="./images/delete.svg" alt="иконка удаления товара из корзины" class="cart__item-delete"></button>
                         <div class="cart__item-counter">
-                            <button class="cart__item-increase">
-                                +
+                            <button class="cart__item-manipulate">
+                                &#43;
                             </button>
                             <p class="cart__item-quantity">1</p>
-                            <button class="cart__item-decrease">
-                                -
+                            <button class="cart__item-manipulate">
+                                &#8722;
                             </button>
                         </div>
+                    </div>
                     </div>
                 </div>
                 <button class="cart__button">Перейти в корзину</button>
@@ -218,28 +225,25 @@
 
         <footer class="footer">
             <div class="footer__wrapper">
-            <h2 class="footer__title">Консультация</h2>
-            <p class="footer__text">Заполните форму ниже и наш мастер</p> 
-            <p class="footer__text">свяжется с вами, чтобы ответить на ваши
-                вопросы</p>
+                <h2 class="footer__title">Консультация</h2>
+                <p class="footer__text">Заполните форму ниже и наш мастер <br> свяжется с вами, чтобы ответить на ваши
+                    вопросы</p>
 
-            <form action="mailto:" name="consult" class="consult__form">
-                <div class="consult__field">
-                    <input type="text" placeholder="Имя">
-                    <label>Имя</label>
-                </div>
+                <form action="mailto:" name="consult" class="consult__form">
+                    <div class="consult__field">
+                        <input type="text" name="name" class="consult__input" required> 
+                        <label for="name" class="consult__label">Имя</label>
+                    </div>
 
-                <div class="consult__field">
-                    <input type="tel" placeholder="Телефон или Email">
-                    <label>Телефон или Email</label>
-                </div>
+                    <div class="consult__field">
+                        <input type="tel" name="phone" class="consult__input" required>
+                        <span class="consult__label">Телефон или Email</span>
+                    </div>
 
-                <div class="consult__field">
-                    <input type="submit" class="consult__button">
-                </div>
+                    <button type="submit" class="consult__button">Получить консультацию</button>
 
-            </form>
-        </div>
+                </form>
+            </div>
         </footer>
     </div>
     <script type="text/javascript" src="script.js"></script>

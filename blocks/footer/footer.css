@@ -1,22 +1,10 @@
+@import url('./__text/footer__text.css');
+@import url('./__title/footer__title.css');
+@import url('./__wrapper/footer__wrapper.css');
+
 .footer {
   width: 100%;
   height: 458px;
   background-color: #002051;
   color: #ffffff;
-}
-
-.footer__wrapper {
-  margin: 88px auto 88px 201px;
-}
-
-.footer__title {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 28px;
-}
-
-.footer__text {
-    width: 549px;
-    font-weight: 500;
-    line-height: 1.375rem;
 }

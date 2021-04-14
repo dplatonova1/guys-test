@@ -1,0 +1,10 @@
+.cart__item{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    height: 100px;
+    padding: 15px;
+}
+
+.cart__item:not(:last-child){
+    border-bottom: 1px #EAF9FC solid;
+}

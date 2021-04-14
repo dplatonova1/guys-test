@@ -1,0 +1,17 @@
+.cart__manipulate{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    
+}
+
+.cart__item-delete{
+    width: 21px;
+    margin-bottom: 20px;
+}
+
+.cart__item-manipulate{
+    background: transparent;
+    border: none;
+}

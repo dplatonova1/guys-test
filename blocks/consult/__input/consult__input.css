@@ -1,0 +1,36 @@
+input:focus ~ .consult__label,
+  input:not(:focus):valid ~ .consult__label{
+    top: 0;
+    bottom: 10px;
+    left: 20px;
+    font-size: 11px;
+    opacity: 1;
+  }
+  
+  .consult__input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #99A6B9;
+    background-color: transparent;
+    width: 396px;
+    cursor: text;
+    height: 50px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+    font-size: 1rem;
+    color: #ffffff;
+    
+  }
+  
+  .consult__label {
+    position: absolute;
+    pointer-events: none;
+    left: 20px;
+    top: 18px;
+    transition: 0.2s ease all;
+  }
+  
+  .consult__field{
+    position: relative;
+  }
